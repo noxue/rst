@@ -1,0 +1,17 @@
+WINDOW_WIDTH = 450
+WINDOW_HEIGHT = 300
+
+MAP_WIDTH = 15
+MAP_HEIGHT = 10
+
+CROSSOVER_RATE = 0.7
+MUTATION_RATE = 0.001
+
+# 基因组群体的大小，就是每代有多少人
+POP_SIZE = 140
+
+# 染色体长度
+CHROMO_LENGTH = 70
+
+# 基因长度，固定2个基因表示一个方向
+GENE_LENGTH = 2
