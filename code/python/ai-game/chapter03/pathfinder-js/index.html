@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遗传算法</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        #canvas{
+            max-width:500px;
+            margin:10px;
+            border:1px solid #eee;
+        }
+        #parms>div{
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="info"></div>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <div>
+        <div id="parms">
+            <div>
+                <label for="crossoverRate">交配概率</label>
+                <input type="text" id="crossoverRate" value="0.7">
+            </div>
+            <div>
+                <label for="mutationRate">突变概率</label>
+                <input type="text" id="mutationRate" value="0.001">
+            </div>
+            <div>
+                <label for="chromosomeLength">染色体长度</label>
+                <input type="text" id="chromosomeLength" value="20">
+            </div>
+            <div>
+                <label for="populationSize">种群个数</label>
+                <input type="text" id="populationSize" value="100">
+            </div>
+        </div>
+
+        <button id="startBtn">开始</button>
+    <div style="color:red">说明：鼠标点击地图对应格子，可以编辑地图</div>
+
+    </div>
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="./js/consts.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/ga.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/params.js"></script>
+    <script src="./js/change_map.js"></script>
+
+</body>
+</html>
+
